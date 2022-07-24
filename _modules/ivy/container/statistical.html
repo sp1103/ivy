@@ -252,7 +252,7 @@
 <span class="sd">       </span>
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
-<span class="sd">        &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0.1, 0.2, 0.9])\</span>
+<span class="sd">        &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0.1, 0.2, 0.9]),\</span>
 <span class="sd">                              b=ivy.array([0.7, 0.1, 0.9]))</span>
 <span class="sd">        &gt;&gt;&gt; y = x.var()</span>
 <span class="sd">        &gt;&gt;&gt; print(y)</span>
@@ -287,8 +287,7 @@
         <span class="o">*</span><span class="p">,</span>
         <span class="n">out</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        ivy.Container static method variant of ivy.var. </span>
+        <span class="sd">&quot;&quot;&quot; ivy.Container static method variant of ivy.var. </span>
 <span class="sd">        This method simply wraps the function, and so </span>
 <span class="sd">        the docstring for ivy.var also applies to this method</span>
 <span class="sd">        with minimal changes.</span>
@@ -324,7 +323,7 @@
 <span class="sd">       </span>
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
-<span class="sd">        &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0.1, 0.2, 0.9])\</span>
+<span class="sd">        &gt;&gt;&gt; x = ivy.Container(a=ivy.array([0.1, 0.2, 0.9]),\</span>
 <span class="sd">                              b=ivy.array([0.7, 0.1, 0.9]))</span>
 <span class="sd">        &gt;&gt;&gt; y = x.var()</span>
 <span class="sd">        &gt;&gt;&gt; print(y)</span>
@@ -332,6 +331,7 @@
 <span class="sd">            a:ivy.array(0.127),</span>
 <span class="sd">            b:ivy.array(0.116)</span>
 <span class="sd">        }</span>
+
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ContainerBase</span><span class="o">.</span><span class="n">multi_map_in_static_method</span><span class="p">(</span>
             <span class="s2">&quot;var&quot;</span><span class="p">,</span>
